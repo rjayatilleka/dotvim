@@ -1,0 +1,18 @@
+[submodule "bundle/Vundle.vim"]
+	path = bundle/Vundle.vim
+	url = git://github.com/gmarik/Vundle.vim.git
+[submodule "bundle/sessionman.vim"]
+	path = bundle/sessionman.vim
+	url = git://github.com/vim-scripts/sessionman.vim.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git://github.com/scrooloose/syntastic.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
+[submodule "bundle/vim-ruby-minitest"]
+	path = bundle/vim-ruby-minitest
+	url = git://github.com/sunaku/vim-ruby-minitest.git
