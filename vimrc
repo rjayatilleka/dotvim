@@ -12,7 +12,8 @@ Plugin 'vim-scripts/sessionman.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'sunaku/vim-ruby-minitest'
+Plugin 'sunaku/vim-ruby-minitest' "Run make in this directory
+Plugin 'Shougo/vimproc.vim'
 Plugin 'eagletmt/ghcmod-vim'
 
 call vundle#end()
