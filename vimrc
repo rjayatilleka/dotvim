@@ -13,6 +13,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'sunaku/vim-ruby-minitest'
+Plugin 'eagletmt/ghcmod-vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -29,14 +30,16 @@ syntax on
 set laststatus=2
 set statusline=%F\ %l:%c
 
+inoremap <C-s> hello
+
 noremap <C-h> <C-w>h<C-w>|
+noremap <C-l> <C-w>l<C-w>|
 noremap <C-j> <C-w>j<C-w>_
 noremap <C-k> <C-w>k<C-w>_
-noremap <C-l> <C-w>l<C-w>|
 noremap H <C-w>h
-noremap J <C-w>j
-noremap K <C-w>k
 noremap L <C-w>l
+noremap J <PageDown>
+noremap K <PageUp>
 
 nnoremap <Space> :exec "normal i".nr2char(getchar())."\e"<CR>
 
