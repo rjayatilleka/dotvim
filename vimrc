@@ -13,8 +13,9 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'sunaku/vim-ruby-minitest' "Run make in this directory
-Plugin 'Shougo/vimproc.vim'
-Plugin 'eagletmt/ghcmod-vim'
+"Plugin 'Shougo/vimproc.vim'
+"Plugin 'eagletmt/ghcmod-vim'
+Plugin 'dag/vim2hs'
 
 call vundle#end()
 filetype plugin indent on
@@ -25,30 +26,32 @@ set completefunc=syntaxcomplete#Complete
 
 set hidden
 set rnu
+set nofoldenable
 set whichwrap+=<,>,h,l,[,]
 syntax on
 
 set laststatus=2
 set statusline=%F\ %l:%c
 
-inoremap <C-s> hello
-
+set wmh=0
 noremap <C-h> <C-w>h<C-w>|
 noremap <C-l> <C-w>l<C-w>|
 noremap <C-j> <C-w>j<C-w>_
 noremap <C-k> <C-w>k<C-w>_
-noremap H <C-w>h
-noremap L <C-w>l
+"noremap H <C-w>h
+"noremap L <C-w>l
 noremap J <PageDown>
 noremap K <PageUp>
 
 nnoremap <Space> :exec "normal i".nr2char(getchar())."\e"<CR>
 
+set smarttab
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set smarttab
-set expandtab
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType haskell setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 " Disable the arrow keys. For training.
 noremap <Up> <NOP>
